@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="ELGAR: Expressive Cello Performance Motion Generation for Audio
+ Rendition">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELGAR: Expressive Cello Performance Motion Generation for Audio Rendition</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <!-- <h4 class="title conference-title is-4">NeurIPS 2023</h4> -->
+                    <h2 class="title is-2 publication-title">ELGAR: <u>E</u>xpressive Ce<u>L</u>lo Performance Motion
+                        <u>G</u>eneration for
+                        <u>A</u>udio
+                        <u>R</u>endition</h2>
+                    <div class="is-size-5 publication-authors">
+
+                        <span class="author-block">Zhiping Qiu<sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Yitong Jin<sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Yuan Wang<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Yi Shi<sup>1,2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Chongwu Wang<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br/>
+                        <span class="author-block">Chao Tan<sup>3</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <span class="author-block">Xiaobing Li<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Feng Yu<sup>2</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block"><a href="https://ytrock.com/">Tao Yu</a><sup>1,✉</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block">Qionghai Dai<sup>1,✉</sup></span>
+                        <br/>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Tsinghua University</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block"><sup>2</sup>Central Conservatory of Music</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="author-block"><sup>3</sup>Weilan Tech, Beijing</span>
+                    </div>
+
+                    <div class="is-size-6 publication-authors">
+                        <span class="author-block"><sup>✉</sup>Corresponding Author</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href="https://dl.acm.org/doi/full/10.1145/3721238.3730756"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                            <!-- arXiv Link. -->
+                            <span class="link-block">
+                <a href="https://arxiv.org/abs/2505.04203" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-book"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                            <!-- Video Link. -->
+                            <span class="link-block">
+                <a href="https://www.bilibili.com/video/BV1rh5NzqEp3/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <!-- Code Link. -->
+                            <span class="link-block">
+                  <a href="https://github.com/Qzping/ELGAR/"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                            <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>SPD-GEN dataset Coming Soon</span>
+                  </a>
+                </span> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <!-- Dataset Link. -->
+                            <!-- <span class="link-block">
+                              <a href="https://drive.google.com/drive/folders/1FPEYvRKKc7_xoSDDh4KY68gjZb3Qfs-l?usp=sharing" class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                  <i class="far fa-images"></i>
+                                </span>
+                                <span>Data</span>
+                              </a>
+                          </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <a href="./static/images/poster.jpg"><img src="./static/images/poster.jpg" autoplay muted loop playsinline
+                                                      height="100%"></a>
+
+            <h5 class="subtitle is-5">
+                <b>TL;DR</b> Generating string instrument performances with intricate movements and complex interactions
+                poses
+                significant challenges.
+                To address these, we present ELGAR—the first framework for whole-body instrument
+                performance motion generation solely from audio.
+                We further contribute innovative losses, metrics, and dataset, marking a novel attempt with promising
+                results for this emerging task. </h5>
+            <img src="./static/images/teaser.jpg" autoplay muted loop playsinline height="50%">
+        </div>
+    </div>
+</section>
+
+<p style="margin-bottom: -1.5cm;"></p>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h3 class="title is-3">Abstract</h3>
+                <div class="content has-text-justified">
+                    The art of instrument performance stands as a vivid manifestation of human creativity and emotion.
+                    Nonetheless, generating instrument performance motions is a highly challenging task, as it requires
+                    not only capturing intricate movements but also reconstructing the complex dynamics of the
+                    performer-instrument interaction.
+                    While existing works primarily focus on modeling partial body motions, we propose Expressive ceLlo
+                    performance motion Generation for Audio Rendition (ELGAR), a state-of-the-art diffusion-based
+                    framework for whole-body fine-grained instrument performance motion generation solely from audio.
+                    To emphasize the interactive nature of the instrument performance, we introduce Hand Interactive
+                    Contact Loss (HICL) and Bow Interactive Contact Loss (BICL), which effectively guarantee the
+                    authenticity of the interplay.
+                    Moreover, to better evaluate whether the generated motions align with the semantic context of the
+                    music audio, we design novel metrics specifically for string instrument performance motion
+                    generation, including finger-contact distance, bow-string distance, and bowing score.
+                    Extensive evaluations and ablation studies are conducted to validate the efficacy of the proposed
+                    methods. In addition, we put forward a motion generation dataset SPD-GEN, collated and normalized
+                    from the MoCap dataset SPD.
+                    As demonstrated, ELGAR has shown great potential in generating instrument performance motions with
+                    complicated and fast interactions, which will promote further development in areas such as
+                    animation, music education, interactive art creation, etc.
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video</h2>
+                <div class="publication-video">
+                    <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114470827327516&bvid=BV1rh5NzqEp3&cid=29830219797&p=1&autoplay=0&muted=0"
+                            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+        <!--/ Paper video. -->
+
+    </div>
+</section>
+
+
+<!-- <p style="margin-bottom: -0.5cm;"></p> -->
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h3 class="title is-3 has-text-centered">Play in Different Tempos</h3>
+            <p align="middle">
+                <img src="./static/images/tempo_fast.gif" width="450">
+                <img src="./static/images/tempo_slow.gif" width="450">
+            </p>
+            <p align="middle">
+                The model generalizes well across tempo variations, suitable for the same musical passage played at
+                different speeds.
+            </p>
+            <!-- <h2 class="subtitle has-text-centered">
+          Throw ball        Standing long jump
+        </h2> -->
+
+            <!-- <p align="middle">
+              <img src="./static/videos/MoCap_20230422_182056.gif" width="512" height="512">
+            </p>
+            <h2 class="subtitle has-text-centered">
+              Throw ball
+            </h2> -->
+
+            <p style="margin-bottom: 1.0cm;"></p>
+            <h3 class="title is-3 has-text-centered">Test Set Sample</h3>
+            <p align="middle">
+                <img src="./static/images/test-set.gif" width="768" height="768">
+            <p align="middle">
+                The model generates plausible performance motions based on test audios in the SPD-GEN dataset.
+            </p>
+            </p>
+
+            <p style="margin-bottom: 1.0cm;"></p>
+            <h3 class="title is-3 has-text-centered">In-the-wild Sample</h3>
+            <p align="middle">
+                <img src="./static/images/in-the-wild.gif" width="768" height="768">
+            </p>
+            <p align="middle">
+                The model is capable of generating plausible performance motions based on in-the-wild audios beyond the
+                curated dataset.
+            </p>
+
+
+            <p style="margin-bottom: 1.0cm;"></p>
+            <h3 class="title is-3 has-text-centered">Retargeting</h3>
+            <p align="middle">
+                <img src="./static/images/retargeting.gif" width="768" height="768">
+            </p>
+            <p align="middle">
+                In this work, we leverage Unreal Engine to retarget motions from the SMPL-X model to alternative
+                avatars, aiming to promote broader applicability of motion retargeting methods to complex
+                interactive motions.
+            </p>
+
+
+            <!-- <h2 class="subtitle has-text-centered">
+              Side step
+            </h2> -->
+
+            <!-- <p align="middle">
+              <img src="./static/videos/MoCap_20230422_151220.gif" width="512" height="512">
+            </p>
+            <h2 class="subtitle has-text-centered">
+              Rope skipping
+            </h2> -->
+
+        </div>
+    </div>
+</section>
+<style>
+    button {
+        padding: 5px 10px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-left: 10px; /* 给按钮留出一些空间 */
+        display: inline-flex;
+        align-items: center;
+        opacity: 1; /* 默认隐藏 */
+        transition: opacity 0.3s; /* 添加过渡效果 */
+    }
+
+    code {
+        padding: 5px 10px;
+        position: relative; /* 使得子元素可以绝对定位 */
+    }
+
+    button:hover {
+        background-color: #0056b3; /* 悬停效果 */
+    }
+</style>
+<p style="margin-bottom: -1.5cm;"></p>
+<section class="section" id="BibTeX">
+    <div class="BibTeX container">
+        <h2 class="title">BibTeX</h2>
+        <pre>
+<button onclick="copyBibTeX('arXiv_BibTeX')">
+<i class="fas fa-copy"></i>
+<span> Copy BibTeX from arXiv.</span>
+</button>
+<code id="arXiv_BibTeX">
+    @article{qiu2025elgar,
+      title={ELGAR: Expressive Cello Performance Motion Generation for Audio Rendition},
+      author={Qiu, Zhiping and Jin, Yitong and Wang, Yuan and Shi, Yi and Wang, Chongwu and Tan, Chao and Li, Xiaobing and Yu, Feng and Yu, Tao and Dai, Qionghai},
+      journal={arXiv e-prints},
+      pages={arXiv--2505},
+      year={2025}
+    }
+</code></pre>
+
+        <pre>
+<button onclick="copyBibTeX('ACM_BibTeX')">
+<i class="fas fa-copy"></i>
+<span> Copy BibTeX from ACM Library.</span>
+</button>
+<code id="ACM_BibTeX">
+    @inproceedings{10.1145/3721238.3730756,
+    author = {Qiu, Zhiping and Jin, Yitong and Wang, Yuan and Shi, Yi and Tan, Chao and Wang, Chongwu and Li, Xiaobing and Yu, Feng and Yu, Tao and Dai, Qionghai},
+    title = {ELGAR: Expressive Cello Performance Motion Generation for Audio Rendition},
+    year = {2025},
+    isbn = {9798400715402},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3721238.3730756},
+    doi = {10.1145/3721238.3730756},
+    booktitle = {Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+    articleno = {54},
+    numpages = {9},
+    keywords = {Motion Generation, Musical Instrument Performance},
+    series = {SIGGRAPH Conference Papers '25}
+    }
+</code></pre>
+        <!-- <h2 class="title">Contact Us</h2>
+        <style>
+          ul {
+            list-style-type: circle;
+          }
+        </style>
+        <ul>
+          <li>For detailed questions about this work, please contact ...</li>
+          <li>We will ... </li>
+        </ul> -->
+
+        <!--<h2 class="title">Con</h2>
+
+        -->
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-size-6">
+                <div class="content">
+                    <p>
+                        This website is created with this <a href="https://motion-x-dataset.github.io/">template</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script>
+    function copyBibTeX(id) {
+        // 获取BibTeX代码块
+        const bibtexBlock = document.getElementById(id);
+        // 创建一个临时文本区域
+        const textArea = document.createElement('textarea');
+        textArea.value = bibtexBlock.innerText; // 获取ACM BibTeX文本
+        document.body.appendChild(textArea); // 将文本区域添加到文档中
+        textArea.select(); // 选择文本
+        document.execCommand('copy'); // 执行复制命令
+        document.body.removeChild(textArea); // 移除临时文本区域
+        alert('The BibTeX has copy to the clipboard!'); // 提示用户
+    }
+</script>
+
+</html>
