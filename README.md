@@ -1,2 +1,2 @@
-# ELGAR: *E*xpressive Ce*L*lo Performance Motion *G*eneration for *A*udio *R*endition
-The official repository for ELGAR project page.
+# ELGAR: <ins>E</ins>xpressive Ce<ins>L</ins>lo Performance Motion <ins>G</ins>eneration for <ins>A</ins>udio <ins>R</ins>endition
+The official repository of ELGAR project page.
